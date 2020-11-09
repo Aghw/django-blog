@@ -12,7 +12,7 @@ body {
 }
 #header {
     background-color: #333;
-    border-botton: 1px solid #111;
+    border-bottom: 1px solid #111;
     margin:0;
     padding:0;
     height: 2.5rem;
@@ -32,7 +32,6 @@ body {
     display: inline-block;
 }
 #control-bar li a {
-    /* color: #eee; */
     color: yellow;
 
     padding: 0.5em;
@@ -76,4 +75,7 @@ ul.categories {
 }
 ul.categories li {
     display: inline;
+}
+#post-separator {
+    border-top: .001rem dotted rgb(216, 117, 36);
 }
