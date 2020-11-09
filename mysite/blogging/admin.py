@@ -14,6 +14,7 @@ class CategoryAdmin(admin.ModelAdmin):
     inlines = [
         CategoryInline,
     ]
+    exclude = ('posts',)
 
     def view_name(self, obj):
         return obj.name
@@ -26,10 +27,3 @@ class PostAdmin(admin.ModelAdmin):
     inlines = [
         CategoryInline,
     ]
-
-
-# admin.site.register(Post, PostAdmin)
-# admin.site.register(Category, CategoryAdmin)
-
-# # admin.site.register(Post)
-# # admin.site.register(Category)
