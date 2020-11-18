@@ -10,11 +10,12 @@ from datetime import datetime, timedelta
 class BlogListView(ListView):
     model = Post
     template_name = 'blogging/list.html'
-    d10 = timedelta(10)
+    # d15 = timedelta(15)
     now = datetime.now()
-    queryset = Post.objects.all().order_by('-published_date').filter(published_date__gt=(now - d10))
+    queryset = Post.objects.order_by('-published_date').exclude(published_date__exact=None)
 
 
 class BlogDetailView(DetailView):
     model = Post
     template_name = 'blogging/detail.html'
+    queryset = Post.objects.exclude(published_date__exact=None)
