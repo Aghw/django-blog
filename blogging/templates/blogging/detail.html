@@ -2,20 +2,22 @@
 
 {% block content %}
 <br>
-<a class="backlink" href="/">Home</a>
-<h1>{{ object }}</h1>
-<p class="byline">
-    Posted by {{ object.author.username }} &mdash; {{ object.published_date }}
-</p>
-<div class="post-body">
-    {{ object.text }}
+<div class="page fold-corner-card" style="position: relative;">
+    <a class="backlink" href="/">Home</a>
+    <h1>{{ object }}</h1>
+    <p class="byline">
+        Posted by {{ object.author.username }} &mdash; {{ object.published_date }}
+    </p>
+    <div class="post-body">
+        {{ object.text }}
+    </div>
+    <hr style="border: .0007rem dashed rgb(51, 63, 230);"/>
+    <ul class="categories">
+        {% for category in object.categories.all %}
+            <li>{{ category }}</li>
+        {% endfor %}
+    </ul>
+    <hr style="border: .0007rem dashed rgb(51, 63, 230);"/>
+    <a class="backlink" href="/">Home</a>
 </div>
-<hr style="border: .0007rem dashed rgb(51, 63, 230);"/>
-<ul class="categories">
-    {% for category in object.categories.all %}
-        <li>{{ category }}</li>
-    {% endfor %}
-</ul>
-<hr style="border: .0007rem dashed rgb(51, 63, 230);"/>
-<a class="backlink" href="/">Home</a>
 {% endblock %}
