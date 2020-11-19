@@ -6,6 +6,59 @@
     background-color:rgb(199, 189, 172);
     font-family: Arial, Helvetica, sans-serif;
 }
+/* 
+  .page {
+      margin: auto;
+      border-radius: .5rem;
+  }
+
+  .page h2 {
+    padding: 85px 0 0 20px;
+    font: 400 35px/1.5 'Lilita One', Helvetica, sans-serif;
+  }
+   
+  .page p {
+    padding: 10px 20px;
+    font: 12px/1.5 Helvetica, sans-serif;
+    color: #4b4b4b;
+  }
+
+  .fold-corner-card {
+    margin: 2em;
+    padding: 2em;
+  }
+
+  .fold-corner-card {
+    background:
+      -webkit-linear-gradient(225deg, transparent 50%, #C9CCD4 50%),
+      -webkit-linear-gradient(45deg, #FFF, #FFF),
+      -webkit-linear-gradient(135deg, #FFF, #FFF),
+      -webkit-linear-gradient(225deg, transparent 25px, #FFF 10px);
+    background:
+      -moz-linear-gradient(225deg, transparent 50%, #C9CCD4 50%),
+      -moz-linear-gradient(45deg, #FFF, #FFF),
+      -moz-linear-gradient(135deg, #FFF, #FFF),
+      -moz-linear-gradient(225deg, transparent 25px, #FFF 10px);
+    background:
+      -o-linear-gradient(225deg, transparent 50%, #C9CCD4 50%),
+      -o-linear-gradient(45deg, #FFF, #FFF),
+      -o-linear-gradient(135deg, #FFF, #FFF),
+      -o-linear-gradient(225deg, transparent 25px, #FFF 10px);
+    background:
+      linear-gradient(225deg, transparent 50%, #C9CCD4 50%),
+      linear-gradient(45deg, #FFF, #FFF),
+      linear-gradient(135deg, #FFF, #FFF),
+      linear-gradient(225deg, transparent 25px, #FFF 10px);
+  }
+
+  .fold-corner-card {
+    -webkit-background-size: 35px 35px, 0 0, 0 0, 100% 100%;
+    -moz-background-size: 35px 35px, 0 0, 0 0, 100% 100%;
+    background-size: 35px 35px, 0 0, 0 0, 100% 100%;
+    background-position: 100% 0, 0 0, 100% 100%, 100% 0;
+    background-repeat: no-repeat;
+  } */
+
 
 .effect2 {
     position: relative;
