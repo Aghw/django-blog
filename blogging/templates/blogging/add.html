@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Add a Post</h1>
+
+<form action="POST">
+    {% csrf_token %}
+    {{ form }}
+    <br>
+
+    <table>
+        <tr>
+            <td>
+                <label for="fullname">Donor Name: </label>
+            </td>
+            <td>
+                <input class="form_input" type="string" id="fullname" name="fullname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input class="blog-post-button" type="submit" name="post" value="Submit">
+            </td>
+        </tr>
+
+    <!-- <button type="submit" class="blog-post-button">Submit</button> -->
+</form>
+
+{% endblock %}
