@@ -5,3 +5,4 @@ class BlogPostForm(ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'text']
+        # fields = "__all__"

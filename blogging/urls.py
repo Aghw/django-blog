@@ -1,6 +1,6 @@
 from django.urls import path
 from blogging.views import BlogListView, BlogDetailView
-from blogging.views import add_model #, detail_view
+from blogging.views import add_model
 
 urlpatterns = [
     path("", BlogListView.as_view(), name="blog_index"),

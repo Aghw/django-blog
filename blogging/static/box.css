@@ -96,8 +96,29 @@
   .blog-post-button {
     font-size: 1.5rem;
     width: 8rem;
-    font-family: "Courier", "Ariel";
+    height: 1.75em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: .45rem;
-    color: navy;
-    background-color: orange;
+    color: rgb(181, 211, 212);
+    background-color: rgb(70, 125, 207);
+  }
+
+
+  .form_input {
+    height:2rem;
+    width: 10rem;
+    color: red;
+    font-family: "Courier", "Ariel";
+    font-size: 1.2rem;
+    color: blue;
+  }
+
+  form {
+    margin-left: 9%;
+  }
+
+  label {
+    font-family: "Courier", "Ariel";
+    font-size: 2rem;
+    color: gray;
   }
