@@ -22,7 +22,7 @@ class Post(models.Model):
         if self.published_date is None:
             self.published_date = datetime.now()
         super().save(*args, **kwargs)
-    
+
 
 class Category(models.Model):
 

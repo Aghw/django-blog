@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Add a Post</h1>
+    
+    <h1 style="margin-left: 6rem;">Add a Post</h1>
 
-<form method="POST" class="form_input">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input class="blog-post-button" type="submit" value="Submit">
-    <!-- <button type="submit" class="blog-post-button">Submit</button> -->
-</form>
-
+    <form method="POST" class="form_input">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="blog-post-button" type="submit" value="Submit">
+    </form>
 {% endblock %}
