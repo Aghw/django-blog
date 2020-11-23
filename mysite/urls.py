@@ -20,10 +20,10 @@ from rest_framework import routers
 from blogging import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
-router.register(r'posts', views.BlogPostViewSet)
-router.register(r'categories', views.CategoryViewSet)
+router.register(r"users", views.UserViewSet)
+router.register(r"groups", views.GroupViewSet)
+router.register(r"posts", views.BlogPostViewSet)
+router.register(r"categories", views.CategoryViewSet)
 
 
 # Wire up our API using automatic URL routing.

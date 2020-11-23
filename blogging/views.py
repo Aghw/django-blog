@@ -24,36 +24,44 @@ class BlogDetailView(DetailView):
     template_name = "blogging/detail.html"
     queryset = Post.objects.exclude(published_date__exact=None)
 
+
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
-    queryset = User.objects.all().order_by('-date_joined')
+
+    queryset = User.objects.all().order_by("-date_joined")
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]
+
 
 class GroupViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
+
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
+
 
 class BlogPostViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows blog posts to be viewed or edited.
     """
+
     queryset = Post.objects.order_by("-published_date").exclude(
         published_date__exact=None
     )
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticated]
 
+
 class CategoryViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows categories to be viewed or edited.
     """
+
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = [permissions.IsAuthenticated]
