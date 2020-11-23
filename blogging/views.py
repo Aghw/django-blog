@@ -12,17 +12,16 @@ from django.contrib.auth.decorators import login_required
 from blogging.forms import BlogPostForm
 
 
-class BlogListView(ListView):
-    template_name = "blogging/list.html"
+class PostListView(ListView):
     queryset = Post.objects.exclude(published_date__exact=None).order_by(
         "-published_date"
     )
+    template_name = "blogging/list.html"
 
 
-class BlogDetailView(DetailView):
-    template_name = "blogging/detail.html"
+class PostDetailView(DetailView):
     queryset = Post.objects.exclude(published_date__exact=None)
-
+    template_name = "blogging/detail.html"
 
 @login_required
 def add_model(request):
