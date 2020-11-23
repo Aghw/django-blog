@@ -23,6 +23,7 @@ class PostDetailView(DetailView):
     queryset = Post.objects.exclude(published_date__exact=None)
     template_name = "blogging/detail.html"
 
+
 @login_required
 def add_model(request):
 
