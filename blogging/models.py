@@ -14,15 +14,6 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    def save(self, *args, **kwargs):
-        """
-        set publish date to the date when post's published status is
-        switched to True, reset the date if post is unpublished
-        """
-        if self.published_date is None:
-            self.published_date = datetime.now()
-        super().save(*args, **kwargs)
-
 
 class Category(models.Model):
 
